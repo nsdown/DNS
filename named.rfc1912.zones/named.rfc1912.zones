@@ -264,7 +264,3 @@ zone "android.com" IN {
         file "google.com.b";
 };
 
-zone "archive.org" IN {
-        type master;
-        file "archive.org.b";
-};
