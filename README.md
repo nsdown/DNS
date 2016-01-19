@@ -1,6 +1,8 @@
 # DNS
 PandaDNS
-更好的上网,远离邪恶.
+
+更好的上网,远离邪恶
+
 #原理
 过去一段时间里大多数人利用hosts来访问被封锁的网站,但是hosts文件需要常常更新,所以本人建立了此项目,利用bind9实现相同的效果.
 
@@ -19,6 +21,7 @@ PandaDNS
 
 #PandaDNS环境
 centos6.7
+
 bind-9.8.2-0.37.rc1.el6_7.5.x86_64
 
 #快速搭建DNS
@@ -29,3 +32,13 @@ bind-9.8.2-0.37.rc1.el6_7.5.x86_64
 3.替换服务器目录文件 /etc/named.rfc1912.zones 为本项目 目录 named.rfc1912.zones 下 named.rfc1912.zones文件
 
 4.把本项目 目录 named 下所有文件上传至服务器目录 /var/named/ 下
+
+5.启动: service named start
+
+#参考书籍
+<<linux服务范例速查大全>> 刘丽霞 邱晓华 编著  清华大学出版社 第一版
+<<linux网络服务配置详解>> 何世晓 编著 清华大学出版社  第一版
+
+#参考途径
+www.baidu.com
+www.google.com
