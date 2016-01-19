@@ -17,3 +17,15 @@ PandaDNS
 #那么...
 那么,希望通过本项目,建立一个又一个的DNS节点~~~~
 
+#PandaDNS环境
+centos6.7
+bind-9.8.2-0.37.rc1.el6_7.5.x86_64
+
+#快速搭建DNS
+1.yum install bind -y
+
+2.替换服务器目录文件 /etc/named.conf 为本项目 根目录的同名文件
+
+3.替换服务器目录文件 /etc/named.rfc1912.zones 为本项目 目录 named.rfc1912.zones 下 named.rfc1912.zones文件
+
+4.把本项目 目录 named 下所有文件上传至服务器目录 /var/named/ 下
