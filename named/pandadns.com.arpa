@@ -1,0 +1,9 @@
+$TTL 1D
+@	IN SOA	ns1.pandadns.com. root.pandadns.com. (
+					1997022700	; serial
+					28800	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+@	IN	NS	ns1.pandadns.com.
+176	IN	PTR	ns1.pandadns.com.

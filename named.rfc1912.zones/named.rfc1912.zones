@@ -1,0 +1,266 @@
+// named.rfc1912.zones:
+//
+// Provided by Red Hat caching-nameserver package 
+//
+// ISC BIND named zone configuration for zones recommended by
+// RFC 1912 section 4.1 : localhost TLDs and address zones
+// and http://www.ietf.org/internet-drafts/draft-ietf-dnsop-default-local-zones-02.txt
+// (c)2007 R W Franks
+// 
+// See /usr/share/doc/bind*/sample/ for example named configuration files.
+//
+
+zone "localhost.localdomain" IN {
+	type master;
+	file "named.localhost";
+	allow-update { none; };
+};
+
+zone "localhost" IN {
+	type master;
+	file "named.localhost";
+	allow-update { none; };
+};
+
+zone "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa" IN {
+	type master;
+	file "named.loopback";
+	allow-update { none; };
+};
+
+zone "1.0.0.127.in-addr.arpa" IN {
+	type master;
+	file "named.loopback";
+	allow-update { none; };
+};
+
+zone "0.in-addr.arpa" IN {
+	type master;
+	file "named.empty";
+	allow-update { none; };
+};
+zone "pandadns.com" IN {
+	type master;
+	file "pandadns.com";
+};
+
+zone "30.27.120.in-addr.arpa" IN {
+	type master;
+	file "pandadns.com.arpa";
+};
+
+//google
+
+zone "google.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "google.com.hk" IN {
+	type master;
+	file "google.com.b";
+};
+
+
+zone "ytimg.com" IN {
+	type master;
+	file "youtube.com.b";
+};
+
+zone "googlehosted.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "googlesyndication.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "googleapis.com" IN {
+	type master;
+	file "google.com.b";
+};
+zone "googlelabs.com" IN {
+	type master;
+	file "google.com.b";
+};
+zone "gstatic.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "googleusercontent.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+
+zone "ggpht.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+
+
+zone "googlevideo.com" IN {
+	type master;
+	file "youtube.com.b";
+};
+
+zone "googleadsserving.cn" IN {
+	type master;
+	file "google.com.b";
+};
+
+
+zone "gstatic.cn" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "googletagservices" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "google-analytics" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "doubleclick.net" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "googletagmanager.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "googlepages.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "toggleable.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "webrtc.org" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "withgoogle.com" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "googlezip.net" IN {
+	type master;
+	file "google.com.b";
+};
+
+zone "polymer-project.org" IN {
+	type master;
+	file "google.com.b";
+};
+zone "wikipedia.org" IN {
+	type master;
+	file "wikipedia.org.b";
+};
+
+zone "blogger.com" IN {
+        type master;
+        file "google.com.b";
+};
+
+zone "dropbox.com" IN {
+        type master;
+        file "dropbox.com.b";
+};
+
+zone "onedrive.live.com" IN {
+        type master;
+        file "onedrive.live.com.b";
+};
+
+zone "twitter.com" IN {
+        type master;
+        file "twitter.com.b";
+};
+
+zone "twimg.com" IN {
+        type master;
+        file "twimg.com.b";
+};
+
+zone "tinypic.com" IN {
+        type master;
+        file "tinypic.com.b";
+};
+
+zone "sndcdn.com" IN {
+        type master;
+        file "sndcdn.com.b";
+};
+
+zone "soundcloud.com" IN {
+        type master;
+        file "soundcloud.com.b";
+};
+
+zone "instagram.com" IN {
+        type master;
+        file "instagram.com.b";
+};
+zone "akamaihd.net" IN {
+        type master;
+        file "akamaihd.net.b";
+};
+zone "cdninstagram.com" IN {
+        type master;
+        file "cdninstagram.com.b";
+};
+zone "facebook.com" IN {
+        type master;
+        file "facebook.com.b";
+};
+zone "fbcdn.net" IN {
+        type master;
+        file "fbcdn.net.b";
+};
+zone "messages-facebook.com" IN {
+        type master;
+        file "messages-facebook.com.b";
+};
+zone "facebook.net" IN {
+        type master;
+        file "facebook.net.b";
+};
+zone "google.cn" IN {
+        type master;
+        file "google.cn.b";
+};
+zone "youtube.com" IN {
+        type master;
+        file "youtube.com.b";
+};
+
+zone "youtube-nocookie.com" IN {
+        type master;
+        file "youtube.com.b";
+};
+zone "googletagservices.com" IN {
+        type master;
+        file "google.com.b";
+};
+
+zone "android.com" IN {
+        type master;
+        file "google.com.b";
+};
+
