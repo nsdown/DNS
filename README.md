@@ -38,11 +38,22 @@ bind-9.8.2-0.37.rc1.el6_7.5.x86_64
 #DNS服务器安全
 配置防火墙防止DDos攻击及放大攻击
 
-iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
+添加规则：iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
 
-iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 60 --hitcount 11 --name dnslimit -j DROP
+添加规则：iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 2 --hitcount 18 --name dnslimit -j DROP
 
-service iptables save
+说明：利用recent和state模块限制单IP在2s内只能与本机建立18个新连接。被限制一分钟后即可恢复访问
+
+保存规则：service iptables save
+
+参看规则是否生效：
+
+iptables -L -n
+
+重启iptables
+
+service iptables restart
+
 
 
 #参考书籍
