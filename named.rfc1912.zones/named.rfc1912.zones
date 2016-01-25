@@ -41,7 +41,7 @@ zone "0.in-addr.arpa" IN {
 };
 zone "pandadns.com" IN {
 	type master;
-	file "pandadns.com";
+	file "pandadns.com.b";
 };
 
 zone "30.27.120.in-addr.arpa" IN {
