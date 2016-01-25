@@ -35,6 +35,16 @@ bind-9.8.2-0.37.rc1.el6_7.5.x86_64
 
 5.启动: service named start
 
+#DNS服务器安全
+配置防火墙防止DDos攻击及放大攻击
+
+iptables -A INPUT -p udp --dport 53 -m recent --set --name dnslimit
+
+iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 60 --hitcount 11 --name dnslimit -j DROP
+
+service iptables save
+
+
 #参考书籍
 linux服务范例速查大全 刘丽霞 邱晓华 编著  清华大学出版社 第一版
 
